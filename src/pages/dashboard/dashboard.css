@@ -1,0 +1,37 @@
+
+
+.tabbar-sidebar {
+    display: flex;
+    min-height: 100vh;
+    position: static;
+    background-image: url('../../assets/images/body-bg.jpg') !important;
+  }
+  
+  .sidebar {
+    background-color: var(--bg-primary);
+    padding: 20px;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.15) !important;
+  }
+  .hr-tab{
+    color: #fff;
+  }
+  
+  .tab-content {
+    background-color: #fff;
+    background-image: url('../../assets/images/body-bg.jpg') !important;
+  }
+
+.my-label {
+    font-size: 14px;
+}
+.my-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-dashboard{
+  background-color: var(--bg-primary-light);
+  border-radius: 5px;
+  padding: 10px;
+  
+}
