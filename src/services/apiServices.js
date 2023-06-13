@@ -160,5 +160,20 @@ const body = JSON.stringify({
 return await fetch(`${server}/register`, {...options, body})
 };
 
+apiServices.createTeacher = async ({teacher}) => {
+  const options = { 
+    method: 'POST', 
+    mode: 'cors', 
+    cache: 'no-cache',
+    credentials: 'same-origin',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+};
+const body = JSON.stringify(teacher);
+
+return await fetch(`${server}/create-teacher`, {...options, body})
+};
+
 
 export default apiServices;

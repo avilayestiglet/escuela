@@ -1,4 +1,5 @@
 export default function (message) {
+    if(message == null || message == undefined) return message;
     switch (message.toUpperCase()) {
         case "Failed to fetch":
             return "No tienes conexión a internet o el servidor esta caido"

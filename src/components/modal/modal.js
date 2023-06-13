@@ -5,7 +5,9 @@ const modalheader = {
   borderBottom: "none"
 };
 const modalStyle = {
-  border: "none"
+  border: "none",
+  display: 'flex',
+  alignItems: "start"
 };
 
 const ModalError = ({ isOpen, onClose, title, children }) => {
@@ -15,7 +17,7 @@ const ModalError = ({ isOpen, onClose, title, children }) => {
 
   return (
     <Modal animation show={isOpen} style={modalheader}>
-        <Modal.Header closeButton onClick={onClose} style={modalStyle}>
+        <Modal.Header closeButton onClick={onClose} style={modalStyle} >
           <Modal.Title>{ title }</Modal.Title>
         </Modal.Header>
         <Modal.Body>

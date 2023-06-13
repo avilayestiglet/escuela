@@ -77,15 +77,16 @@ const Studends = () => {
 
   const deleteTeacher = ({ id }) => {
     setIsLoading(true);
-    setTeacher(teachers.flatMap((t) => t.id == id ? [] : t));
+    console.log(teachers.flatMap((t) => t.id_profesor == id ? [] : t));
+    setTeachers(teachers.flatMap((t) => t.id_profesor == id ? [] : t));
     apiServices.deleteTeacher({id})
     .then((x) => x.json())
     .then((r) => {
       if(r.status === 200) {
-          setIsLoading(true);
+          setIsLoading(false);
           onCloseModal();
           setMessage('Profesor eliminado con éxito');
-          setShowMessage(false);
+          setShowMessage(true);
       }else{
         setIsLoading(false);
         onCloseModal();

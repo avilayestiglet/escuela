@@ -8,6 +8,7 @@ import Init from "./components/init/init";
 import Teacher from "./components/teacher/teacher";
 import Students from "./components/students/students";
 import Matriculas from "./components/matriculas/matriculas";
+import Eventos from "./components/eventos/eventos";
 
 const Dashboard = () => {
   
@@ -70,6 +71,9 @@ const Dashboard = () => {
               <Nav.Item>
                 <Nav.Link className="text-white" eventKey="four">Matriculas</Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link className="text-white" eventKey="five">Eventos</Nav.Link>
+              </Nav.Item>
             </div>
             <div className="row">
                 <hr className="hr-tab"/>
@@ -91,6 +95,9 @@ const Dashboard = () => {
             </Tab.Pane>
             <Tab.Pane eventKey="four">
               <Matriculas/>
+            </Tab.Pane>
+            <Tab.Pane eventKey="five">
+              <Eventos/>
             </Tab.Pane>
           </Tab.Content>
         </Col>

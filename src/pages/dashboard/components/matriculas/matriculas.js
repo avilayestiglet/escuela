@@ -3,7 +3,6 @@ import { Table } from "react-bootstrap";
 import apiServices from "../../../../services/apiServices";
 import loading from "../../../../assets/images/loading.svg";
 import translate from "../../../../utils/translate";
-import PencilSVG from "../../../../components/image/pencil";
 import TrashSVG from "../../../../components/image/trash";
 import ButtonTheme from "../../../../components/buttons/button";
 import ModalInfo from '../../../../components/modal/modal_info';
@@ -204,7 +203,7 @@ const Matriculas = () => {
       <div className="container-fluid align-items-center justify-content-center p-4">
         <div className="row justify-content-end">
           <div className="col-md-6 col-lg-3">
-            <ButtonTheme onClick={() => goView({path: '/dashboard/create-teacher'})}  child={"Crear profesor"}  myclass="btn_on-hover btn theme-bg-secondary w-100 mb-2"/>
+            <ButtonTheme  child={"Crear matricula"}  myclass="btn_on-hover btn theme-bg-secondary w-100 mb-2"/>
           </div>
         </div>
         <div className="card w-100">
